@@ -1,0 +1,19 @@
+# Mini-Kairo
+Mini-Kairo is a lightweight proof-of-concept security scanner
+for Solidity smart contracts.
+
+It detects common vulnerabilities during development, simulating
+real-time security feedback similar to AI-native IDEs like Kairo.
+
+## Detected Issues
+- Reentrancy via low-level calls
+- Unchecked external calls
+- tx.origin usage
+
+## Usage
+python scanner.py samples/vulnerable.sol
+
+## Note
+This is intentionally simple and rule-based, designed to demonstrate
+security thinking and developer workflow alignment — not to replace
+full auditors.
